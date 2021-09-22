@@ -11,6 +11,7 @@ namespace BaseEngine.Models
 {
    public class DuckSpawner : IInteractorObject
     {
+
         public event Action OnDuckKill;
 
         private MouseInput _mouseInput;
@@ -35,16 +36,28 @@ namespace BaseEngine.Models
             _mouseInput = mouseInput;
 
             _baseEngine = baseEngine;
+
+            _baseEngine.OnNewWindowState += SwitchTimerSpawnBehaviour;
+        }
+
+        private void SwitchTimerSpawnBehaviour(bool stateWindow)
+        {
+            if (!stateWindow)
+            {
+                _timer.Stop();
+            }
+
+            else
+            {
+                _timer.Start();
+            }
         }
 
         public void Load(ContentManager content)
         {
+            // nothing logic
         }
 
-        public void OnDestroy()
-        {
-           
-        }
 
         public void Start()
         {
@@ -54,7 +67,7 @@ namespace BaseEngine.Models
 
             _timer.AutoReset = true;
 
-            _timer.Interval = 3000;
+            _timer.Interval = Constants.DEFAULT_INTERVAL_SPAWN;
 
             _timer.Start();
         }
@@ -80,7 +93,7 @@ namespace BaseEngine.Models
 
               duck.OnExitScreen -= RemoveDuck;
 
-              duck.OnRemove += RemoveDuck;
+              duck.OnRemove -= RemoveDuck;
 
               _baseEngine.RemoveInteractorObject(duck);
             }
@@ -89,5 +102,7 @@ namespace BaseEngine.Models
         }
 
         private void CallEventIncrementScore(Duck duck) => OnDuckKill?.Invoke();
+
+        public void OnDestroy() => _baseEngine.OnNewWindowState -= SwitchTimerSpawnBehaviour;
     }
 }

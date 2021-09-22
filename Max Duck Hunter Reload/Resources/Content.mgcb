@@ -25,6 +25,18 @@
 /processorParam:Quality=Best
 /build:Audio/Music/music.wav
 
+#begin Audio/Music/music_2.wav
+/importer:WavImporter
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Audio/Music/music_2.wav
+
+#begin Audio/Music/music_3.wav
+/importer:WavImporter
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Audio/Music/music_3.wav
+
 #begin Img/background1.png
 /importer:TextureImporter
 /processor:TextureProcessor

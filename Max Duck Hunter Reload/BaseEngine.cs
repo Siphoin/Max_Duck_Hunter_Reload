@@ -15,10 +15,13 @@ namespace BaseEngine
     {
         private const string NAME_FOLBER_RESOURCES = "Resources";
 
+        private bool _windowisActivated = true;
 
         private List<IInteractorObject> _interactorObjects;
 
         public event Action<int, Vector2> OnMouseDown;
+
+        public event Action<bool> OnNewWindowState;
 
         private GraphicsDeviceManager _graphics;
 
@@ -29,6 +32,8 @@ namespace BaseEngine
         private BackgrounsMusic _backgrounsMusic;
 
         private AudioFXManager _audioFXManager;
+
+        private SongManager _songManager;
 
         private FXController _fXController;
 
@@ -46,15 +51,20 @@ namespace BaseEngine
 
             _graphics.PreferredBackBufferHeight = Constants.SCREEN_HEIGHT;
 
+            
+          
             Content.RootDirectory = NAME_FOLBER_RESOURCES;
            
             IsMouseVisible = true;
 
             Window.KeyDown += Quit;
 
+            Activated += ContinueGameLogic;
+
+            Deactivated += StopGameLogic;
+
             _interactorObjects = new List<IInteractorObject>();
         }
-
 
         private void Quit(object sender, InputKeyEventArgs key)
         {
@@ -70,11 +80,17 @@ namespace BaseEngine
 
             _duckSpawner = new DuckSpawner(this, _mouseInput);
 
-            _backgrounsMusic = new BackgrounsMusic();
-
             _audioFXManager = new AudioFXManager(Content);
 
             _fXController = new FXController(_audioFXManager, _duckSpawner);
+
+            _songManager = new SongManager(Content);
+
+            _backgrounsMusic = new BackgrounsMusic(_songManager);
+
+            _audioFXManager.LoadAudioData();
+
+            _songManager.LoadAudioData();
 
             RegisterInteractorObject(_background);
 
@@ -83,8 +99,6 @@ namespace BaseEngine
             RegisterInteractorObject(_backgrounsMusic);
 
             RegisterInteractorObject(_fXController);
-
-            _audioFXManager.LoadSounds();
 
             base.Initialize();
         }
@@ -102,11 +116,15 @@ namespace BaseEngine
 
         protected override void Update(GameTime gameTime)
         {
+            if (_windowisActivated)
+            {
             UpdateLogic(gameTime);
 
             CheckMouseDown();
 
             base.Update(gameTime);
+            }
+
         }
 
         private void CheckMouseDown()
@@ -142,6 +160,8 @@ namespace BaseEngine
 
         protected override void Draw(GameTime gameTime)
         {
+            if (_windowisActivated)
+            {
             GraphicsDevice.Clear(Color.Gray);
 
             _spriteBatch.Begin();
@@ -151,6 +171,8 @@ namespace BaseEngine
             _spriteBatch.End();
 
             base.Draw(gameTime);
+            }
+
         }
 
         private void DrawObjects(SpriteBatch spriteBatch)
@@ -200,9 +222,21 @@ namespace BaseEngine
             @object.OnDestroy();
 
             _interactorObjects.Remove(@object);
-
-
         }
+
+        private void ContinueGameLogic(object sender, EventArgs e) => SetStateActiveWindow(true);
+
+        private void StopGameLogic(object sender, EventArgs e) => SetStateActiveWindow(false);
+
+        private void SetStateActiveWindow(bool state)
+        {
+            _windowisActivated = state;
+
+            System.Diagnostics.Debug.WriteLine($"new game window state: {_windowisActivated}");
+
+            OnNewWindowState?.Invoke(_windowisActivated);
+        }
+
 
     }
 }

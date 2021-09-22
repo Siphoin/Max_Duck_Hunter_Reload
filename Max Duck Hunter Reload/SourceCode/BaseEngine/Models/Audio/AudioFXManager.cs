@@ -1,20 +1,17 @@
-﻿using Exception;
+﻿using BaseEngine.Interfaces;
+using Exception;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
-using System.Text;
 
 namespace BaseEngine.Models.Audio
 {
-   public class AudioFXManager
+    public class AudioFXManager : AudioManagerBase
     {
         private SoundEffectContainer _container;
-
-        private ContentManager _contentManager;
 
         private Dictionary<string, SoundEffect> _soundsList;
 
@@ -28,10 +25,10 @@ namespace BaseEngine.Models.Audio
 
             _soundsList = new Dictionary<string, SoundEffect>();
 
-            _contentManager = contentManager;
+            this.contentManager = contentManager;
         }
 
-        public void LoadSounds()
+        public override void LoadAudioData()
         {
             try
             {
@@ -42,7 +39,7 @@ namespace BaseEngine.Models.Audio
                 {
                     string id = _container.Sounds[i];
 
-                    SoundEffect soundEffect = _contentManager.Load<SoundEffect>($"{Constants.PATH_RESOURCES_FX_AUDIO}{id}");
+                    SoundEffect soundEffect = contentManager.Load<SoundEffect>($"{Constants.PATH_RESOURCES_FX_AUDIO}{id}");
 
                     _soundsList.Add(id, soundEffect);
                 }

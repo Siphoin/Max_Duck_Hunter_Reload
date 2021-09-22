@@ -1,4 +1,5 @@
-﻿using BaseEngine.Interfaces;
+﻿using BaseEngine.Extensions;
+using BaseEngine.Interfaces;
 using BaseEngine.Models.DuckModel.States;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
@@ -11,6 +12,8 @@ namespace BaseEngine.Models
 {
     public class Duck : DrawableObjectBase, IDrawableObject, IUpdateLogicObject, IDisposable
     {
+
+
 
         public event Action<Duck> OnClickPlayer;
 
@@ -97,11 +100,11 @@ namespace BaseEngine.Models
 
             int ScreenX = Constants.SCREEN_WIDTH / 2;
 
-            int ScreenY = Constants.SCREEN_HEIGHT / 12;
+            int ScreenY = Constants.SCREEN_HEIGHT / 2;
 
-            int x = Direction == DuckDirection.Left ? ScreenX + Constants.BORDER_SPAWN_DUCK : ScreenX - Constants.BORDER_SPAWN_DUCK;
+            float x = Direction == DuckDirection.Left ? ScreenX + Constants.BORDER_SPAWN_DUCK : ScreenX - Constants.BORDER_SPAWN_DUCK;
 
-            int y = randomPositionGenerator.Next(ScreenY * -1, ScreenY);
+            float y = (float)randomPositionGenerator.NextDouble(ScreenY * -1, ScreenY);
 
             CurrentPosition = new Vector2(x, y);
         }

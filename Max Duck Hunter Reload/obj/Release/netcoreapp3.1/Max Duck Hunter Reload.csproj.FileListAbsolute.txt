@@ -54,7 +54,6 @@ D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\Resou
 D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\Resources\Img\background2.xnb
 D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\Resources\Img\background3.xnb
 D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\Resources\Img\duck.xnb
-D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\Resources\Img\duck_down.xnb
 D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\Resources\Img\duck_left.xnb
 D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\Resources\Img\duck_right.xnb
 D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\Max Duck Hunter Reload.exe
@@ -96,3 +95,8 @@ D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\obj\Release\netcoreapp3.1\Max D
 D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\obj\Release\netcoreapp3.1\Max Duck Hunter Reload.dll
 D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\obj\Release\netcoreapp3.1\Max Duck Hunter Reload.pdb
 D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\obj\Release\netcoreapp3.1\Max Duck Hunter Reload.genruntimeconfig.cache
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\Resources\Audio\Music\music_2.wma
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\Resources\Audio\Music\music_2.xnb
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\Resources\Audio\Music\music_3.wma
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\Resources\Audio\Music\music_3.xnb
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\Manifest\song.json

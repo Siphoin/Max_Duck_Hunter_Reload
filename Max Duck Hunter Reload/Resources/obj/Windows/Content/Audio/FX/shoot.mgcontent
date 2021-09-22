@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <SourceFile>D:/Max_Duck_Hunter_Reload/Max Duck Hunter Reload/Resources/Audio/FX/shoot.wav</SourceFile>
-  <SourceTime>2021-09-20T15:31:47.0883504+05:00</SourceTime>
+  <SourceTime>2021-09-22T15:26:09.8589935+05:00</SourceTime>
   <DestFile>D:/Max_Duck_Hunter_Reload/Max Duck Hunter Reload/Resources/bin/Windows/Content/Audio/FX/shoot.xnb</DestFile>
-  <DestTime>2021-09-20T19:08:10.2049529+05:00</DestTime>
+  <DestTime>2021-09-22T15:26:19.6820172+05:00</DestTime>
   <Importer>WavImporter</Importer>
   <ImporterTime>2020-08-10T21:17:54+05:00</ImporterTime>
   <Processor>SoundEffectProcessor</Processor>

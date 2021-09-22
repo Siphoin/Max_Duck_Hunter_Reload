@@ -6,6 +6,8 @@
   <SourceFiles>
     <File>D:/Max_Duck_Hunter_Reload/Max Duck Hunter Reload/Resources/Audio/FX/shoot.wav</File>
     <File>D:/Max_Duck_Hunter_Reload/Max Duck Hunter Reload/Resources/Audio/Music/music.wav</File>
+    <File>D:/Max_Duck_Hunter_Reload/Max Duck Hunter Reload/Resources/Audio/Music/music_2.wav</File>
+    <File>D:/Max_Duck_Hunter_Reload/Max Duck Hunter Reload/Resources/Audio/Music/music_3.wav</File>
     <File>D:/Max_Duck_Hunter_Reload/Max Duck Hunter Reload/Resources/Img/background1.png</File>
     <File>D:/Max_Duck_Hunter_Reload/Max Duck Hunter Reload/Resources/Img/background2.png</File>
     <File>D:/Max_Duck_Hunter_Reload/Max Duck Hunter Reload/Resources/Img/background3.png</File>
@@ -13,6 +15,8 @@
     <File>D:/Max_Duck_Hunter_Reload/Max Duck Hunter Reload/Resources/Img/duck_right.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

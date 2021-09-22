@@ -27,7 +27,7 @@ namespace BaseEngine.Models.DuckModel.States
 
             if (Owner.Direction == DuckDirection.Right)
             {
-                if (Owner.CurrentPosition.X > Constants.SCREEN_WIDTH)
+                if (Owner.CurrentPosition.X > Constants.SCREEN_WIDTH / 2)
                 {
                     Debug.WriteLine("duck remove");
 

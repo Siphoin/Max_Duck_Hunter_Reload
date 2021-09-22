@@ -1,4 +1,6 @@
 ﻿using BaseEngine.Interfaces;
+using BaseEngine.Models.Audio;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Media;
 using System;
@@ -9,21 +11,57 @@ namespace BaseEngine.Models
 {
     public class BackgrounsMusic : IInteractorObject
     {
-        private Song _music;
+        private int _currentIndexSong;
+
+        private SongManager _songManager;
+
+        private Song[] _songs;
+
+
+        public BackgrounsMusic (SongManager songManager)
+        {
+            if (songManager == null)
+            {
+                throw new ArgumentNullException("song manager refrence is null");
+            }
+
+            _songManager = songManager;
+
+            _currentIndexSong = 0;
+        }
        
 
         public void OnDestroy()
         {
-            throw new NotImplementedException();
+            MediaPlayer.MediaStateChanged -= CheckStateMediaPlayer;
         }
 
         public void Start()
         {
-            MediaPlayer.IsRepeating = true;
 
-            MediaPlayer.Play(_music);           
+            _songs = _songManager.GetSongs();
+
+            MediaPlayer.MediaStateChanged += CheckStateMediaPlayer;
+
+            MediaPlayer.Volume = 0.5f;
+
+            PlaySong(new Random().Next(0, _songs.Length));
         }
 
-        public void Load(ContentManager content) => _music = content.Load<Song>($"{Constants.PATH_RESOURCES_MUSIC}music");
+        private void CheckStateMediaPlayer(object sender, EventArgs e)
+        {
+            if (MediaPlayer.State == MediaState.Stopped)
+            {
+                _currentIndexSong = MathHelper.Clamp(_currentIndexSong + 1, 0, _songs.Length - 1);
+                PlaySong(_currentIndexSong);
+            }
+        }
+
+        public void Load(ContentManager content)
+        {
+            // nothing logic
+        }
+
+        private void PlaySong(int index) => MediaPlayer.Play(_songs[index]);
     }
 }
