@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/Users/Max/source/repos/Max Duck Hunter Reload/Resources/Img/duck_left.png</SourceFile>
+  <SourceFile>D:/Max_Duck_Hunter_Reload/Max Duck Hunter Reload/Resources/Img/duck_left.png</SourceFile>
   <SourceTime>2021-09-20T12:18:55.8813404+05:00</SourceTime>
-  <DestFile>C:/Users/Max/source/repos/Max Duck Hunter Reload/Resources/bin/Windows/Content/Img/duck_left.xnb</DestFile>
-  <DestTime>2021-09-20T12:25:04.783523+05:00</DestTime>
+  <DestFile>D:/Max_Duck_Hunter_Reload/Max Duck Hunter Reload/Resources/bin/Windows/Content/Img/duck_left.xnb</DestFile>
+  <DestTime>2021-09-20T19:08:15.6690285+05:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2020-08-10T21:17:54+05:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

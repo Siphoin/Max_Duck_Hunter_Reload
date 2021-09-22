@@ -11,7 +11,6 @@ namespace BaseEngine.Models
 {
     public class Duck : DrawableObjectBase, IDrawableObject, IUpdateLogicObject, IDisposable
     {
-        public float _currentAngleY = 0;
 
         public event Action<Duck> OnClickPlayer;
 
@@ -27,9 +26,13 @@ namespace BaseEngine.Models
 
         private IState<Duck> _currentState;
 
+        public float Angle { get; private set; }
+
         public DuckDirection Direction { get; private set; }
 
-        public Vector2 CurrentPosition { get; set; } = new Vector2(Constants.SCREEN_WIDTH, Constants.SCREEN_HEIGHT);
+        public Color CurrentColor { get; private set; }
+
+        public Vector2 CurrentPosition { get; set; }
 
         public Duck(MouseInput mouseInput)
         {
@@ -38,8 +41,13 @@ namespace BaseEngine.Models
                 throw new NullReferenceException("mouse input reference is null");
             }
 
-            _mouseInput = mouseInput;
+            Angle = 0;
 
+            CurrentColor = Color.White;
+
+            CurrentPosition = new Vector2(Constants.SCREEN_WIDTH, Constants.SCREEN_HEIGHT);
+
+            _mouseInput = mouseInput;
 
             _stateMap = new Dictionary<Type, IState<Duck>>();
         }
@@ -53,7 +61,6 @@ namespace BaseEngine.Models
 
             Direction = (DuckDirection)indexDirection;
 
-            Debug.WriteLine(Direction);
 
             string prefixFileDuck = "_";
 
@@ -79,8 +86,6 @@ namespace BaseEngine.Models
         public void Start()
         {
             InitializeStates();
-
-            Random random = new Random();
 
             GeneratePosition();
 
@@ -118,9 +123,7 @@ namespace BaseEngine.Models
                 return;
             }
 
-            
-
-            spriteBatch.Draw(Texture, CurrentPosition, Rectangle, Color.White);
+            spriteBatch.Draw(Texture, CurrentPosition, null, CurrentColor, Angle, Vector2.Zero, 1, SpriteEffects.None, 0);
         }
 
         private void CheckMouseClick(int indexMouse, Vector2 mousePosition)
@@ -138,9 +141,6 @@ namespace BaseEngine.Models
             }
 
         }
-
-        public void SetTextureDeath() => LoadTexture("Img/duck_down", _contentManager);
-
 
         #region States
         private void InitializeStates()
@@ -186,6 +186,7 @@ namespace BaseEngine.Models
         protected void SetStateDeath() => SetState(GetState<DuckStateDeath>());
 
         #endregion
+
         public void CallEventExitDuckOnScreen() => OnExitScreen?.Invoke(this);
 
         public void CallEventRemove() => OnRemove?.Invoke(this);
@@ -194,7 +195,9 @@ namespace BaseEngine.Models
 
         public void UncribeMouseDownEvent() => _mouseInput.OnMouseDown -= CheckMouseClick;
 
-        public void RotateDownAngle() => _currentAngleY = 90;
+        public void SetAlphaColorIntensity(byte value) => CurrentColor = new Color(value, value, value, value);
+
+        public void SetAngleRotation(float value) => Angle = value;
 
         public void Dispose() => _mouseInput = null;
 

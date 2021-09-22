@@ -7417,11 +7417,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Max\\source\\repos\\Max Duck Hunter Reload\\Max Duck Hunter Reload.csproj",
+      "projectUniqueName": "D:\\Max_Duck_Hunter_Reload\\Max Duck Hunter Reload\\Max Duck Hunter Reload.csproj",
       "projectName": "Max Duck Hunter Reload",
-      "projectPath": "C:\\Users\\Max\\source\\repos\\Max Duck Hunter Reload\\Max Duck Hunter Reload.csproj",
+      "projectPath": "D:\\Max_Duck_Hunter_Reload\\Max Duck Hunter Reload\\Max Duck Hunter Reload.csproj",
       "packagesPath": "C:\\Users\\Max\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Max\\source\\repos\\Max Duck Hunter Reload\\obj\\",
+      "outputPath": "D:\\Max_Duck_Hunter_Reload\\Max Duck Hunter Reload\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

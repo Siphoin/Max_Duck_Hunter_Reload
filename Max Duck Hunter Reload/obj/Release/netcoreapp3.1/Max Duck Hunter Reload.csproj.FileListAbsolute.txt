@@ -47,3 +47,52 @@ C:\Users\Max\source\repos\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\Resou
 C:\Users\Max\source\repos\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\Resources\Audio\Music\music.xnb
 C:\Users\Max\source\repos\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\Manifest\audio.json
 C:\Users\Max\source\repos\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\Resources\Audio\FX\shoot.xnb
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\Resources\Audio\Music\music.wma
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\Resources\Audio\Music\music.xnb
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\Resources\Img\background1.xnb
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\Resources\Img\background2.xnb
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\Resources\Img\background3.xnb
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\Resources\Img\duck.xnb
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\Resources\Img\duck_down.xnb
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\Resources\Img\duck_left.xnb
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\Resources\Img\duck_right.xnb
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\Max Duck Hunter Reload.exe
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\Manifest\audio.json
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\Max Duck Hunter Reload.deps.json
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\Max Duck Hunter Reload.runtimeconfig.json
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\Max Duck Hunter Reload.runtimeconfig.dev.json
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\Max Duck Hunter Reload.dll
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\Max Duck Hunter Reload.pdb
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\Microsoft.VisualBasic.dll
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\MonoGame.Framework.dll
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\SharpDX.dll
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\SharpDX.Direct2D1.dll
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\SharpDX.Direct3D11.dll
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\SharpDX.Direct3D9.dll
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\SharpDX.DXGI.dll
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\SharpDX.Mathematics.dll
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\SharpDX.MediaFoundation.dll
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\SharpDX.XAudio2.dll
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\SharpDX.XInput.dll
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\runtimes\debian-x64\native\libuv.so
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\runtimes\fedora-x64\native\libuv.so
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\runtimes\opensuse-x64\native\libuv.so
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\runtimes\osx\native\libuv.dylib
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\runtimes\rhel-x64\native\libuv.so
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\runtimes\win7-arm\native\libuv.dll
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\runtimes\win7-x64\native\libuv.dll
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\bin\Release\netcoreapp3.1\runtimes\win7-x86\native\libuv.dll
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\obj\Release\netcoreapp3.1\Max Duck Hunter Reload.csproj.AssemblyReference.cache
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\obj\Release\netcoreapp3.1\Max Duck Hunter Reload.GeneratedMSBuildEditorConfig.editorconfig
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\obj\Release\netcoreapp3.1\Max Duck Hunter Reload.AssemblyInfoInputs.cache
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\obj\Release\netcoreapp3.1\Max Duck Hunter Reload.AssemblyInfo.cs
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\obj\Release\netcoreapp3.1\Max Duck Hunter Reload.csproj.CoreCompileInputs.cache
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\obj\Release\netcoreapp3.1\Max Duck Hunter Reload.csproj.CopyComplete
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\obj\Release\netcoreapp3.1\Max Duck Hunter Reload.dll
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\obj\Release\netcoreapp3.1\Max Duck Hunter Reload.pdb
+D:\Max_Duck_Hunter_Reload\Max Duck Hunter Reload\obj\Release\netcoreapp3.1\Max Duck Hunter Reload.genruntimeconfig.cache

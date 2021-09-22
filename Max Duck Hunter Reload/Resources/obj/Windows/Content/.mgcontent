@@ -4,17 +4,15 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/Max/source/repos/Max Duck Hunter Reload/Resources/Audio/FX/shoot.wav</File>
-    <File>C:/Users/Max/source/repos/Max Duck Hunter Reload/Resources/Audio/Music/music.wav</File>
-    <File>C:/Users/Max/source/repos/Max Duck Hunter Reload/Resources/Img/background1.png</File>
-    <File>C:/Users/Max/source/repos/Max Duck Hunter Reload/Resources/Img/background2.png</File>
-    <File>C:/Users/Max/source/repos/Max Duck Hunter Reload/Resources/Img/background3.png</File>
-    <File>C:/Users/Max/source/repos/Max Duck Hunter Reload/Resources/Img/duck_down.png</File>
-    <File>C:/Users/Max/source/repos/Max Duck Hunter Reload/Resources/Img/duck_left.png</File>
-    <File>C:/Users/Max/source/repos/Max Duck Hunter Reload/Resources/Img/duck_right.png</File>
+    <File>D:/Max_Duck_Hunter_Reload/Max Duck Hunter Reload/Resources/Audio/FX/shoot.wav</File>
+    <File>D:/Max_Duck_Hunter_Reload/Max Duck Hunter Reload/Resources/Audio/Music/music.wav</File>
+    <File>D:/Max_Duck_Hunter_Reload/Max Duck Hunter Reload/Resources/Img/background1.png</File>
+    <File>D:/Max_Duck_Hunter_Reload/Max Duck Hunter Reload/Resources/Img/background2.png</File>
+    <File>D:/Max_Duck_Hunter_Reload/Max Duck Hunter Reload/Resources/Img/background3.png</File>
+    <File>D:/Max_Duck_Hunter_Reload/Max Duck Hunter Reload/Resources/Img/duck_left.png</File>
+    <File>D:/Max_Duck_Hunter_Reload/Max Duck Hunter Reload/Resources/Img/duck_right.png</File>
   </SourceFiles>
   <DestFiles>
-    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
